@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "outDir": "../.vercel/output/functions"
+  },
+  "include": [
+    "./index.ts",
+    "../server/**/*",
+    "../shared/**/*",
+    "../drizzle/**/*"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../client",
+    "../**/*.test.ts"
+  ]
+}
